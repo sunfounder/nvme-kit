@@ -15,7 +15,14 @@
 Installing Raspberry Pi OS
 ================================================================================
 
+
+In this chapter, you will learn how to install the operating systems. All the installation steps depend on the |link_rpi_imager|, which you need to install first.
+
+
+
 You can choose an installation method based on whether you have a Micro SD card or an NVMe SSD available.
+
+
 
 **Using a Micro SD Card Only**
 

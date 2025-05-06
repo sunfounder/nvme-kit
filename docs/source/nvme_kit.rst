@@ -1,4 +1,19 @@
-Dual NVMe Kit
+.. note::
+
+    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+
+    **Why Join?**
+
+    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
+    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
+    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
+    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
+    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+
+    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+
+
+Dual NVMe Version
 ===============================================
 
 The **Dual NVMe Kit** enables you to connect two M.2 peripheral devices (such as NVMe drives and other PCIe accessories) to the Raspberry Pi 5's PCIe interface.
@@ -24,7 +39,7 @@ Users can configure two NVMe SSDs in software RAID 0 or RAID 1 for NAS setups, c
 -----------------------------------------------------------------------
 
 
-NVMe Kit
+Single NVMe Version
 ===============================================
 
 The **NVMe Kit** allows you to connect an M.2 NVMe SSD to the Raspberry Pi 5's PCIe interface.

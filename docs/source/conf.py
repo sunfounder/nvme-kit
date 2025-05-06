@@ -85,3 +85,59 @@ language = 'en' # Before running make html, set the language.
 locale_dirs = ['locale/'] # .po files for other languages are placed in the locale/ folder.
 
 gettext_compact = False # Support for generating the contents of the folders inside source/ into other languages.
+
+
+rst_epilog = """
+
+.. |link_sf_facebook| raw:: html
+
+    <a href="https://bit.ly/raphaelkit" target="_blank">here</a>
+
+.. |link_rpi_get_start| raw:: html
+
+    <a href="https://www.raspberrypi.com/documentation/computers/getting-started.html" target="_blank">Getting Started with Raspberry Pi</a>
+
+.. |link_rpi_imager| raw:: html
+
+    <a href="https://www.raspberrypi.org/software/" target="_blank">Raspberry Pi Imager</a>
+
+.. |link_batocera| raw:: html
+
+    <a href="https://batocera.org/" target="_blank">Batocera.linux</a>
+
+
+.. |link_batocera_download| raw:: html
+
+    <a href="https://batocera.org/download" target="_blank">Batocera.linux download</a>
+
+.. |link_sf_facebook| raw:: html
+
+    <a href="https://bit.ly/raphaelkit" target="_blank">here</a>
+
+.. |link_kodi| raw:: html
+
+    <a href="https://kodi.tv/" target="_blank">Kodi</a>
+    
+.. |link_osmc| raw:: html
+
+    <a href="https://osmc.tv/" target="_blank">OSMC</a>
+
+.. |link_libreelec| raw:: html
+
+    <a href="https://libreelec.tv/" target="_blank">LibreELEC</a>
+    
+.. |link_imager| raw:: html
+
+    <a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi Imager</a>
+
+
+
+.. |link_raspberry_pi_imager| raw:: html
+
+    <a href="https://www.raspberrypi.org/software/" target="_blank">Raspberry Pi Imager</a>
+
+.. |link_putty| raw:: html
+
+    <a href="https://www.putty.org/" target="_blank">PuTTY</a>
+
+    """
