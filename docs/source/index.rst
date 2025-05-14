@@ -22,7 +22,7 @@ We have two kits, one is **Dual NVMe Raft**, the other is **General NVMe PIP**. 
 
 Continue to read the documentation to learn how to use them.
 
-
+.. warning:: Never hot-plug NVMe SSDs as it may result in damage to your devices.
 
 .. toctree::
    :maxdepth: 3
