@@ -30,7 +30,7 @@ Continue to read the documentation to learn how to use the NVMe Kit.
    About NVME Kit <self>
    nvme_kit
    install/install_raspberry_os
-   compitable_ssd
+   compitable_nvme_ssd
    omv
    faq
 
