@@ -13,12 +13,12 @@
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
 
-SunFounder NVMe Kit
+SunFounder NVMe Kit Series
 =====================================
 
-NVMe Kit is a hardware kit for Raspberry Pi, which can be used to read and write NVMe SSDs. It is compatible with Raspberry Pi 5.
+The NVMe Kit Series is a hardware kit for Raspberry Pi, which can be used to read and write NVMe SSDs. It is compatible with Raspberry Pi 5.
 
-We have two kits, one is Dual NVMe Raft, the other is General NVMe PIP. The difference between the two kits is that the Dual NVMe Raft has two NVMe SSD slots, and the General NVMe PIP has one NVMe SSD slot.
+We have two kits, one is **Dual NVMe Raft**, the other is **General NVMe PIP**. The difference between the two kits is that the **Dual NVMe Raft** has two NVMe SSD slots, and the **General NVMe PIP** has one NVMe SSD slot. 
 
 Continue to read the documentation to learn how to use them.
 
