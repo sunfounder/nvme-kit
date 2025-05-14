@@ -13,10 +13,10 @@
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
 
-Dual NVMe Version
+Dual NVMe Raft
 ===============================================
 
-The **Dual NVMe Kit** enables you to connect two M.2 peripheral devices (such as NVMe drives and other PCIe accessories) to the Raspberry Pi 5's PCIe interface.
+The **Dual NVMe Raft** enables you to connect two M.2 peripheral devices (such as NVMe drives and other PCIe accessories) to the Raspberry Pi 5's PCIe interface.
 
 The Dual NVMe Kit integrates a PCIe Gen 2 switch with two M.2 M-key PCIe slots supporting 2230, 2242, 2260, and 2280 sizes, allowing the installation of two NVMe Gen2 SSDs or AI accelerators.  
 Users can configure two NVMe SSDs in software RAID 0 or RAID 1 for NAS setups, combine one AI accelerator with one NVMe SSD to enhance AI performance, or install two AI accelerators for even more powerful AI capabilities.
@@ -39,10 +39,10 @@ Users can configure two NVMe SSDs in software RAID 0 or RAID 1 for NAS setups, c
 -----------------------------------------------------------------------
 
 
-Single NVMe Version
+Generally NVMe PIP
 ===============================================
 
-The **NVMe Kit** allows you to connect an M.2 NVMe SSD to the Raspberry Pi 5's PCIe interface.
+The **Generally NVMe PIP** allows you to connect an M.2 NVMe SSD to the Raspberry Pi 5's PCIe interface.
 
 The NVMe Kit integrates a PCIe Gen 2 switch with an M.2 M-key PCIe slot supporting 2230, 2242, 2260, and 2280 sizes, allowing the installation of NVMe Gen2 SSDs or AI accelerators.
 
