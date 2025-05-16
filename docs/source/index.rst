@@ -28,7 +28,8 @@ Continue to read the documentation to learn how to use them.
    :maxdepth: 3
 
    About NVME Kit <self>
-   nvme_kit
+   dual_nvme_raft
+   nvme_pip
    install/install_raspberry_os
    compitable_nvme_ssd
    omv

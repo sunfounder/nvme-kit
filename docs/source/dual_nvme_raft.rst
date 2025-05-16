@@ -1,0 +1,63 @@
+.. note::
+
+    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+
+    **Why Join?**
+
+    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
+    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
+    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
+    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
+    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+
+    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+
+
+Dual NVMe Raft
+===============================================
+
+The **Dual NVMe Raft** enables you to connect two M.2 peripheral devices (such as NVMe drives and other PCIe accessories) to the Raspberry Pi 5's PCIe interface.
+
+The Dual NVMe Kit integrates a PCIe Gen 2 switch with two M.2 M-key PCIe slots supporting 2230, 2242, 2260, and 2280 sizes, allowing the installation of two NVMe Gen2 SSDs or AI accelerators.  
+Users can configure two NVMe SSDs in software RAID 0 or RAID 1 for NAS setups, combine one AI accelerator with one NVMe SSD to enhance AI performance, or install two AI accelerators for even more powerful AI capabilities.
+
+-----------------------------------------------------------------------
+
+**Features**
+
+- Dual-channel PCIe 2.0 interface with a peak transfer rate of up to 500 MB/s
+- Compatible with M.2 NVMe SSDs using the M-Key interface; supports sizes 2230, 2242, 2260, and 2280
+- Onboard 3.3V power supply supports up to 3A output
+- Since the Raspberry Pi's PCIe interface provides only 1A (5W), an external 5V power source is recommended when higher power (up to 10W) is required
+- Includes a 2-pin 2.54mm header and cable for additional external power input
+- Designed to mount on the back of the Raspberry Pi without interfering with active cooling or other compatible expansion boards
+- Connects to the Raspberry Pi via an FPC (Flexible Printed Circuit) cable
+- Equipped with three status LEDs: STA1 and STA2 indicate activity on each PCIe channel, while PWR shows power status
+
+-----------------------------------------------------------------------
+
+
+**Hardware Overview**
+
+
+.. image:: img/O0917V10.png
+
+
+* PCIe Port: Connects to the Raspberry Pi via an FPC cable to transfer PCIe signals between the board and the Pi.
+* Extra Power Input: Provides additional 5V input when higher power is needed for NVMe SSDs. Useful when the Pi’s PCIe interface cannot supply enough current.
+* Power Indicator: Indicates whether the board is receiving power. If off, check the PCIe cable or external power.
+* Force Enable: Forces the 3.3V power supply to turn on regardless of PCIe signal. Use this jumper if the system doesn't provide the power-enable signal.
+* NVMe SSD Slot: Accepts M.2 NVMe SSDs (M-Key), compatible with 2230, 2242, 2260, and 2280 form factors.
+* STA Indicator: Indicates the activity status of each NVMe SSD slot. Blinks during data transfer or device activity.
+
+
+
+-----------------------------------------------------------------------
+
+**Assembly Instructions**
+
+.pdf
+
+
+
+

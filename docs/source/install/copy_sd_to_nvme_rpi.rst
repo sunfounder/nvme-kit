@@ -60,7 +60,25 @@ By default the PCIe connector is not enabled.
   
     The Raspberry Pi 5 is not certified for Gen 3.0 speeds, and connections to PCIe devices at these speeds may be unstable.
 
+*  You will need to disable the PCIe boot delay so that the Raspberry Pi can detect the NVMe drive behind the PCIe Switch at startup. Add the following line to ``/boot/firmware/config.txt`` ：
+
+   .. code-block:: shell
+
+      dtparam=pciex1_no_10s=on
+
+
 * Press ``Ctrl + X``, ``Y`` and ``Enter`` to save the changes.
+
+
+
+**BOOT_ORDER**
+
+If you have installed two NVMe system drives and need to choose one to boot from, 
+you can modify the ``ROOT=PARTUUID=xxxxxxxxx`` in the ``/boot/firmware/cmdline.txt`` file to the UUID of the disk you want to boot from. You can find the disk UUID with the following command:
+
+.. code-block:: shell
+
+   ls /dev/disk/by-id/
 
 
 2. Install the OS on the SSD
