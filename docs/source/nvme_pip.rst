@@ -30,12 +30,14 @@ This compact module is only slightly larger than the SSD itself. It can be mount
 .. image:: img/O0929V10-B1.png
 
 
-* PCIe Port: Connects to the Raspberry Pi via an FPC cable to transfer PCIe signals between the board and the Pi.
-* Extra Power Input: Provides additional 5V input when higher power is needed for NVMe SSDs. Useful when the Pi’s PCIe interface cannot supply enough current.
-* Power Indicator: Indicates whether the board is receiving power. If off, check the PCIe cable or external power.
-* Force Enable: Forces the 3.3V power supply to turn on regardless of PCIe signal. Use this jumper if the system doesn't provide the power-enable signal.
-* NVMe SSD Slot: Accepts M.2 NVMe SSDs (M-Key), compatible with 2230, 2242, 2260, and 2280 form factors.
-* STA Indicator: Indicates the activity status of each NVMe SSD slot. Blinks during data transfer or device activity.
+
+* **PCIe Port**: Connects to the Raspberry Pi via an FPC cable to transfer PCIe signals between the board and the Pi.
+* **Extra Power Input**: Provides additional 5V input when higher power is needed for NVMe SSDs. Useful when the Pi’s PCIe interface cannot supply enough current.
+* **Power Indicator**: Indicates whether the board is receiving power. If off, check the PCIe cable or external power.
+* **Force Enable**: Forces the 3.3V power supply to turn on regardless of PCIe signal. Use this jumper if the system doesn't provide the power-enable signal.
+* **NVMe SSD Slot**: Accepts M.2 NVMe SSDs (M-Key), compatible with 2230, 2242, 2260, and 2280 form factors.
+* **STA Indicator**: Indicates the activity status of each NVMe SSD slot. Blinks during data transfer or device activity.
+
 
 
 -------------------------------------------------
