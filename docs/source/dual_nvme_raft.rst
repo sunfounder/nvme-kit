@@ -56,8 +56,7 @@ Users can configure two NVMe SSDs in software RAID 0 or RAID 1 for NAS setups, c
 
 **Assembly Instructions**
 
-.pdf
-
+* :download:`[PDF]Component List and Assembly of Dual NVMe Raft </_static/pdf/Z0317V10-dual_nvme_raft.pdf>`
 
 
 
