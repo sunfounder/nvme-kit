@@ -17,7 +17,7 @@ Dual NVMe Raft
 ===============================================
 
 
-.. image:: img/O0917V10-pic.png
+.. image:: img/O0917V10-pic.jpg
     :align: center
 
 
