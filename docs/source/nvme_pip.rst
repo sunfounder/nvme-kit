@@ -2,6 +2,10 @@
 General NVMe PIP
 ===============================================
 
+.. .. image:: img/O0929V10-PIC.png
+..     :align: center
+
+
 The **General NVMe PIP** allows you to connect an M.2 NVMe SSD to the Raspberry Pi 5's PCIe interface.
 
 The NVMe Kit integrates a PCIe Gen 2 switch with an M.2 M-key PCIe slot supporting 2230, 2242, 2260, and 2280 sizes, allowing the installation of NVMe Gen2 SSDs or AI accelerators.
@@ -28,7 +32,7 @@ This compact module is only slightly larger than the SSD itself. It can be mount
 
 
 .. image:: img/O0929V10-B1.png
-
+    :align: center
 
 
 * **PCIe Port**: Connects to the Raspberry Pi via an FPC cable to transfer PCIe signals between the board and the Pi.

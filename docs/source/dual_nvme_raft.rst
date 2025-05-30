@@ -18,6 +18,8 @@ Dual NVMe Raft
 
 
 .. image:: img/O0917V10-pic.png
+    :align: center
+
 
 The **Dual NVMe Raft** enables you to connect two M.2 peripheral devices (such as NVMe drives and other PCIe accessories) to the Raspberry Pi 5's PCIe interface.
 
@@ -44,7 +46,7 @@ Users can configure two NVMe SSDs in software RAID 0 or RAID 1 for NAS setups, c
 
 
 .. image:: img/O0917V10.png
-
+    :align: center
 
 * **PCIe Port**: Connects to the Raspberry Pi via an FPC cable to transfer PCIe signals between the board and the Pi.
 * **Extra Power Input**: Provides additional 5V input when higher power is needed for NVMe SSDs. Useful when the Pi’s PCIe interface cannot supply enough current.
