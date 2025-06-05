@@ -17,6 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 import sphinx_rtd_theme
+import time
 
 project = 'SunFounder NVMe Kit'
 copyright = f'{time.localtime().tm_year}, SunFounder'
