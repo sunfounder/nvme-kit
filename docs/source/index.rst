@@ -22,9 +22,10 @@ We have two kits, one is **Dual NVMe Raft**, the other is **General NVMe PIP**. 
 
 .. note:: It is recommended to use the official 27W power supply for the Raspberry Pi 5 when using it with either Dual NVMe Raft or General NVMe PIP, to ensure sufficient and stable power delivery. Using unofficial, underpowered, or non-compliant power adapters may result in SSDs failing to operate properly.
 
+.. warning:: Never hot-plug NVMe SSDs as it may result in damage to your devices.
+
 Continue to read the documentation to learn how to use them.
 
-.. warning:: Never hot-plug NVMe SSDs as it may result in damage to your devices.
 
 .. toctree::
    :maxdepth: 3
