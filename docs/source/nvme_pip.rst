@@ -12,6 +12,9 @@ The NVMe Kit integrates a PCIe Gen 2 switch with an M.2 M-key PCIe slot supporti
 
 This compact module is only slightly larger than the SSD itself. It can be mounted either on top of or beside the Raspberry Pi, occupying minimal space and remaining compatible with the installation of the active cooler.
 
+.. note:: It is recommended to use the official 27W power supply for the Raspberry Pi 5 when using it with either Dual NVMe Raft or General NVMe PIP, to ensure sufficient and stable power delivery. Using unofficial, underpowered, or non-compliant power adapters may result in SSDs failing to operate properly.
+
+.. warning:: Never hot-plug NVMe SSDs as it may result in damage to your devices.
 
 -------------------------------------------------
 

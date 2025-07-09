@@ -26,6 +26,10 @@ The **Dual NVMe Raft** enables you to connect two M.2 peripheral devices (such a
 The Dual NVMe Kit integrates a PCIe Gen 2 switch with two M.2 M-key PCIe slots supporting 2230, 2242, 2260, and 2280 sizes, allowing the installation of two NVMe Gen2 SSDs or AI accelerators.  
 Users can configure two NVMe SSDs in software RAID 0 or RAID 1 for NAS setups, combine one AI accelerator with one NVMe SSD to enhance AI performance, or install two AI accelerators for even more powerful AI capabilities.
 
+.. note:: It is recommended to use the official 27W power supply for the Raspberry Pi 5 when using it with either Dual NVMe Raft or General NVMe PIP, to ensure sufficient and stable power delivery. Using unofficial, underpowered, or non-compliant power adapters may result in SSDs failing to operate properly.
+
+.. warning:: Never hot-plug NVMe SSDs as it may result in damage to your devices.
+
 -----------------------------------------------------------------------
 
 **Features**
