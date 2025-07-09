@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>兼容的 NVMe SSD &mdash; SunFounder NVMe Kit  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="https://ezblock.cc/readDocFile/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="https://ezblock.cc/readDocFile/custom.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="配置 OpenMediaVault" href="omv.html" />
+    <link rel="prev" title="将操作系统从 Micro SD 卡复制到 NVMe SSD" href="install/copy_sd_to_nvme_rpi.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+<nav id="nav-bar">
+  <ul class="nav-bar-items" id="nav-bar-items">
+    <li class="nav-bar-logo">
+      <a href="https://sunfounder.com">
+        <img class="logo-img" src="https://ezblock.cc/readDocFile/sunfounder_LOGO_160x@2x.png"/>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            SunFounder NVMe Kit
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">关于 NVME 套件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dual_nvme_raft.html">双 NVMe 扩展板（Dual NVMe Raft）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nvme_pip.html">通用 NVMe PIP 模块（General NVMe PIP）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/install_raspberry_os.html">安装 Raspberry Pi 操作系统</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">兼容的 NVMe SSD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">兼容的 NVMe SSD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">不兼容的 NVMe SSD</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="omv.html">配置 OpenMediaVault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">常见问题解答（FAQ）</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SunFounder NVMe Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">兼容的 NVMe SSD</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/compitable_nvme_ssd.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>您好，欢迎加入 SunFounder 的 Raspberry Pi、Arduino 和 ESP32 爱好者 Facebook 社区！与志同道合的朋友一起深入探索 Raspberry Pi、Arduino 和 ESP32 的无限可能。</p>
+<p><strong>为什么加入？</strong></p>
+<ul class="simple">
+<li><p><strong>专家支持</strong>：在社区和官方团队的帮助下解决售后问题和技术难题。</p></li>
+<li><p><strong>学习与分享</strong>：交流技巧和教程，提升技能。</p></li>
+<li><p><strong>独家预览</strong>：抢先了解新产品发布和独家预览内容。</p></li>
+<li><p><strong>专属折扣</strong>：享受我们最新产品的专属优惠。</p></li>
+<li><p><strong>节日促销与抽奖</strong>：参与节日特别活动和抽奖。</p></li>
+</ul>
+<p>👉 准备好一起探索与创造了吗？点击 [<a href="https://bit.ly/raphaelkit" target="_blank">here</a>] 立即加入！</p>
+</div>
+<section id="nvme-ssd">
+<h1>兼容的 NVMe SSD<a class="headerlink" href="#nvme-ssd" title="Permalink to this heading"></a></h1>
+<section id="id1">
+<h2>兼容的 NVMe SSD<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>ADATA Legend 700</p></li>
+<li><p>ADATA Legend 800</p></li>
+<li><p>AData XPG SX8200 Pro</p></li>
+<li><p>Axe Memory Generic Drive</p></li>
+<li><p>Crucial P2 M.2</p></li>
+<li><p>Crucial P3 M.2</p></li>
+<li><p>Crucial P3 Plus M.2</p></li>
+<li><p>Inland PCIe NVMe SSD</p></li>
+<li><p>KIOXIA EXCERIA NVMe SSD</p></li>
+<li><p>KIOXIA EXCERIA G2 NVMe SSD</p></li>
+<li><p>Kingston KC3000</p></li>
+<li><p>Kingston NV2</p></li>
+<li><p>Lexar NM710</p></li>
+<li><p>Lexar NM620</p></li>
+<li><p>Netac NV3000 NVMe SSD</p></li>
+<li><p>Netac NV2000 NVMe SSD</p></li>
+<li><p>Origin Inception TLC830 Pro NVMe SSD</p></li>
+<li><p>Ortial ON-750-128 NVME SSD</p></li>
+<li><p>Pineberry Pi Pinedrive (2280)</p></li>
+<li><p>PNY CS1030</p></li>
+<li><p>Sabrent Rocket 4.0</p></li>
+<li><p>Sabrent Rocket Nano</p></li>
+<li><p>Samsung 970 EVO Plus</p></li>
+<li><p>Samsung 980</p></li>
+<li><p>Samsung 980 Pro</p></li>
+<li><p>Samsung 990 Pro</p></li>
+<li><p>Team MP33</p></li>
+<li><p>Western Digital SN570</p></li>
+<li><p>Western Digital SN530</p></li>
+<li><p>Western Digital Black SN750 SE</p></li>
+<li><p>Western Digital Blue SN550 系列（如果您了解如何安装最新版 rpi-eeprom 更新程序，pieeprom-2024-01-24.bin 修复了 WD Blue SN550 无法启动问题，参考：<a class="reference external" href="https://forums.raspberrypi.com/viewtopic.php?t=364327">https://forums.raspberrypi.com/viewtopic.php?t=364327</a>）</p></li>
+<li><p>XPG GAMMIX S70 BLADE</p></li>
+<li><p>XPG SX8200 Pro</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>不兼容的 NVMe SSD<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<p>建议避免使用以下配备了 <strong>Phison 控制器</strong> 的 NVMe SSD 驱动器，它们已被证实与 Raspberry Pi 存在兼容性问题：</p>
+<ul class="simple">
+<li><p>Western Digital SN740</p></li>
+<li><p>Western Digital Black SN770</p></li>
+<li><p>WD Blue SN580 系列</p></li>
+<li><p>Western Digital Green SN350 系列</p></li>
+<li><p>Western Digital Black SN850 系列</p></li>
+<li><p>WD BLACK 8TB SN850X</p></li>
+<li><p>Inland tn446 NVMe 驱动器</p></li>
+<li><p>Corsair MP600 SSD</p></li>
+<li><p>Samsung PM991</p></li>
+<li><p>Kingston OM8SEP4256Q-A0</p></li>
+<li><p>Transcend 110Q (TS500GMTE110Q)</p></li>
+<li><p>其他使用相同 Phison 控制器的 NVMe SSD 驱动器</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install/copy_sd_to_nvme_rpi.html" class="btn btn-neutral float-left" title="将操作系统从 Micro SD 卡复制到 NVMe SSD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="omv.html" class="btn btn-neutral float-right" title="配置 OpenMediaVault" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, SunFounder.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
