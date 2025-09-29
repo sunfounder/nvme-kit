@@ -32,10 +32,13 @@ No additional drivers are needed. Raspberry Pi OS and most mainstream Linux syst
 
 
 
-3. Does the General NVMe PIP support PCIe Gen3 or higher devices?
+3. Does the Dual NVMe Raft support PCIe Gen3 or higher devices?
 ------------------------------------------------------------------
 
-The General NVMe PIP is designed based on PCIe 2.0. Even if you install PCIe Gen3 or higher devices, they will operate at PCIe 2.0 speeds.
+The Dual NVMe Raft is designed based on PCIe 2.0. 
+Even if you install PCIe Gen3 or higher devices, they will operate at PCIe 2.0 speeds. 
+
+
 
 
 
