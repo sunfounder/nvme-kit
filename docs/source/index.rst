@@ -27,20 +27,49 @@ We have two kits, one is **Dual NVMe Raft**, the other is **General NVMe PIP**. 
 Continue to read the documentation to learn how to use them.
 
 
+.. .. toctree::
+..    :maxdepth: 3
+
+..    About NVME Kit <self>
+..    dual_nvme_raft
+..    nvme_pip
+..    install/install_raspberry_os
+..    compitable_nvme_ssd
+..    omv
+..    faq
+
+
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
+   :caption: Home Page
 
    About NVME Kit <self>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Installation & Setup
+
+   install/install_raspberry_os.rst
+   omv
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Hardware & Compatibility
+
    dual_nvme_raft
    nvme_pip
-   install/install_raspberry_os
-   compitable_nvme_ssd
-   omv
-   faq
+   compitable_nvme_ssd.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Troubleshooting & FAQ
+
+   faq
 
 
 **Copyright Notice**
 
 All contents including but not limited to texts, images, and code in this manual are owned by the SunFounder Company. You should only use it for personal study,investigation, enjoyment, or other non-commercial or nonprofit purposes, under therelated regulations and copyrights laws, without infringing the legal rights of the author and relevant right holders. For any individual or organization that uses these for commercial profit without permission, the Company reserves the right to take legal action.
+
+
 

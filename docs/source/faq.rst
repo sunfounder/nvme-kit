@@ -14,8 +14,14 @@
 
 
 
-FAQ
-================
+.. FAQ
+.. ================
+
+
+
+
+General Issues
+==================================
 
 1. How do I know if I have the Dual NVMe Raft or the General NVMe PIP?
 -----------------------------------------------------------------------------------------
@@ -23,32 +29,96 @@ FAQ
 The **Dual NVMe Raft** supports dual device installation, while the **General NVMe PIP** supports only a single device installation.
 
 
+2. Is the FPC cable length limited? Can I replace it with a longer one?
+---------------------------------------------------------------------------
 
-2. Does the Dual NVMe Raft require driver installation?
+The included FPC cable length is optimized for signal integrity. It is not recommended to replace it with a longer or different cable, as this may cause unstable communication.
+
+
+
+
+3. PWR LED is off
+-------------------
+
+Troubleshooting steps:
+
+1. Check if the PCIe cable is properly connected;
+2. Verify the cable orientation and ensure it is fully inserted;
+3. Try replacing the PCIe cable with another one.
+
+4. The system does not detect the SSD
+---------------------------------------
+
+Follow these steps to diagnose:
+
+1. Check if the activity LED (STA) blinks during Raspberry Pi startup;
+2. Confirm PCIe is enabled by running ``dmesg | grep pcie`` in the terminal;
+3. Use ``lspci`` to check for detected PCIe devices;
+4. Use ``ls /dev/nvme*`` to see if the NVMe drive is recognized;
+5. If the device is recognized but not mounted, check whether partitions and a file system have been created.
+
+5. Cannot boot from the NVMe SSD
+----------------------------------
+
+Make sure of the following:
+
+1. STA activity LED blinks at startup;
+2. EEPROM boot order is correctly configured to boot from PCIe;
+3. The configuration includes ``dtparam=pciex1_no_l0s=on``;
+4. The SSD has a bootable OS properly installed and is compatible with Raspberry Pi.
+
+6. What is FORCE ENABLE?
+-----------------------------
+
+The onboard 3.3V power supply is normally activated by a signal from the PCIe interface when the Raspberry Pi powers on. If the system does not provide this signal (due to OS or hardware limitations), you can short the J4 "FORCE EN" jumper to force the 3.3V power supply to turn on and ensure the NVMe SSD receives power.
+
+
+
+Dual NVMe Raft
+==================================
+
+
+
+1. Does the Dual NVMe Raft require driver installation?
 -----------------------------------------------------------------
 
 No additional drivers are needed. Raspberry Pi OS and most mainstream Linux systems natively support PCIe NVMe devices.
 
 
 
-
-3. Does the Dual NVMe Raft support PCIe Gen3 or higher devices?
+2. Does the Dual NVMe Raft support PCIe Gen3 or higher devices?
 ------------------------------------------------------------------
 
 The Dual NVMe Raft is designed based on PCIe 2.0. 
 Even if you install PCIe Gen3 or higher devices, they will operate at PCIe 2.0 speeds. 
 
-
-
-
-
-4. For the Dual NVMe Raft, can I install only one NVMe SSD? 
+3. For the Dual NVMe Raft, can I install only one NVMe SSD? 
 -----------------------------------------------------------------
 
 Yes. The Dual NVMe Raft can operate normally even with only one NVMe SSD installed; installing two devices is not required.
 
 
-5. About the Raspberry Pi AI HAT+
+
+
+4. Will connecting the Dual NVMe Raft reduce the performance of the Raspberry Pi?
+----------------------------------------------------------------------------------
+
+Generally, no. However, please note that the Raspberry Pi 5 has limited PCIe lane resources, and the available bandwidth is shared among connected devices. Performance may be slightly affected during heavy simultaneous data transfers.
+
+General NVMe Pip
+==================================
+
+1. Does the General NVMe PIP support hot swapping?
+---------------------------------------------------
+
+No. The PCIe interface does not support hot swapping. Please power off the Raspberry Pi before inserting or removing M.2 devices.
+
+
+
+Other Questions
+==================================
+
+1. About the Raspberry Pi AI HAT+
 ----------------------------------------------------------
 
 The Raspberry Pi AI HAT+ is not compatible with the Dual NVMe Raft and the General NVMe PIP.
@@ -64,55 +134,6 @@ The Raspberry Pi AI Kit combines the Raspberry Pi M.2 HAT+ and the Hailo AI acce
 You can detach the Hailo AI accelerator module from the Raspberry Pi AI Kit and directly insert it into the NVMe PIP module.
 
 
-6. Does the General NVMe PIP support hot swapping?
----------------------------------------------------
-
-No. The PCIe interface does not support hot swapping. Please power off the Raspberry Pi before inserting or removing M.2 devices.
 
 
-7. Is the FPC cable length limited? Can I replace it with a longer one?
----------------------------------------------------------------------------
-
-The included FPC cable length is optimized for signal integrity. It is not recommended to replace it with a longer or different cable, as this may cause unstable communication.
-
-
-8. Will connecting the Dual NVMe Raft reduce the performance of the Raspberry Pi?
-----------------------------------------------------------------------------------
-
-Generally, no. However, please note that the Raspberry Pi 5 has limited PCIe lane resources, and the available bandwidth is shared among connected devices. Performance may be slightly affected during heavy simultaneous data transfers.
-
-9. PWR LED is off
--------------------
-
-Troubleshooting steps:
-
-1. Check if the PCIe cable is properly connected;
-2. Verify the cable orientation and ensure it is fully inserted;
-3. Try replacing the PCIe cable with another one.
-
-10. The system does not detect the SSD
----------------------------------------
-
-Follow these steps to diagnose:
-
-1. Check if the activity LED (STA) blinks during Raspberry Pi startup;
-2. Confirm PCIe is enabled by running ``dmesg | grep pcie`` in the terminal;
-3. Use ``lspci`` to check for detected PCIe devices;
-4. Use ``ls /dev/nvme*`` to see if the NVMe drive is recognized;
-5. If the device is recognized but not mounted, check whether partitions and a file system have been created.
-
-11. Cannot boot from the NVMe SSD
-----------------------------------
-
-Make sure of the following:
-
-1. STA activity LED blinks at startup;
-2. EEPROM boot order is correctly configured to boot from PCIe;
-3. The configuration includes ``dtparam=pciex1_no_l0s=on``;
-4. The SSD has a bootable OS properly installed and is compatible with Raspberry Pi.
-
-12. What is FORCE ENABLE?
------------------------------
-
-The onboard 3.3V power supply is normally activated by a signal from the PCIe interface when the Raspberry Pi powers on. If the system does not provide this signal (due to OS or hardware limitations), you can short the J4 "FORCE EN" jumper to force the 3.3V power supply to turn on and ensure the NVMe SSD receives power.
 
