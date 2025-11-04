@@ -13,6 +13,8 @@
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
 
+.. _identify_model:
+
 SunFounder NVMe Kit Series
 =====================================
 
@@ -26,17 +28,6 @@ We have two kits, one is **Dual NVMe Raft**, the other is **General NVMe PIP**. 
 
 Continue to read the documentation to learn how to use them.
 
-
-.. .. toctree::
-..    :maxdepth: 3
-
-..    About NVME Kit <self>
-..    dual_nvme_raft
-..    nvme_pip
-..    install/install_raspberry_os
-..    compitable_nvme_ssd
-..    omv
-..    faq
 
 
 .. toctree::
@@ -58,7 +49,7 @@ Continue to read the documentation to learn how to use them.
 
    dual_nvme_raft
    nvme_pip
-   compitable_nvme_ssd.rst
+   compatible_nvme_ssd.rst
 
 .. toctree::
    :maxdepth: 2
