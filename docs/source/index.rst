@@ -12,6 +12,9 @@
 
     👉 准备好一起探索与创造了吗？点击 [|link_sf_facebook|] 立即加入！
 
+
+.. _identify_model:
+
 SunFounder NVMe 套件系列
 =====================================
 
@@ -25,16 +28,35 @@ NVMe 套件系列是适用于 Raspberry Pi 的一套硬件扩展模块，可用�
 
 继续阅读本手册，了解如何正确使用这些套件。
 
-.. toctree::
-   :maxdepth: 3
 
-   关于 NVME 套件 <self>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 首页
+
+   关于NVMe套件 <self>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 安装与设置
+
+   install/install_raspberry_os.rst
+   omv
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 硬件与兼容性
+
    dual_nvme_raft
    nvme_pip
-   install/install_raspberry_os
-   compitable_nvme_ssd
-   omv
+   compatible_nvme_ssd.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 常见问题解答
+
    faq
+
 
 
 **版权声明**
